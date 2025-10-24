@@ -53,9 +53,9 @@ services:
       defaultnet:
         ipv4_address: 172.18.0.20
     ports:
-      - "80:80/tcp"
-      - "443:443/tcp"
-      - "5060:5060/udp"
+      - ":80/tcp"
+      - ":443/tcp"
+      - ":5060/udp"
     secrets:
       - postfix_sasl_passwd
     depends_on:
